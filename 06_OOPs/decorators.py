@@ -55,7 +55,7 @@ class Person:
 
 @final
 class Staff(Person):
-    # Class variable just for practise
+    # Class variable just for practice
     STORE = "Walmart"
 
     def __init__(self, fname: str, lname: str, staff_id: int, role: Role) -> None:
