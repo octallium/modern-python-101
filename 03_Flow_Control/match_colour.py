@@ -1,6 +1,6 @@
 """
-While travelling to Zortan, Louis packed lots of stuff. Let's
-see if he has anything that matches your favourite colour.
+While traveling to Zortan, Louis packed lots of stuff. Let's
+see if he has anything that matches your favorite color.
 
 INFO -
 ------
@@ -8,9 +8,9 @@ INFO -
 `match` is a new operator introduced in Python 3.10
 """
 
-fav_colour: str = input("Enter your favourite color: ").lower()
+fav_color: str = input("Enter your favorite color: ").lower()
 
-match fav_colour:
+match fav_color:
     case "black":
         print("Louis has a BLACK T-Shirt.")
     case "red":
@@ -20,4 +20,4 @@ match fav_colour:
     case "green":
         print("Louis has a GREEN hat")
     case _:
-        print(f"Louis has nothing in {fav_colour} colour.")
+        print(f"Louis has nothing in {fav_color} color.")

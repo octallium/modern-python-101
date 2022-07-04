@@ -2,7 +2,7 @@
 ENUM:
 -----
 
-This is a very good data structure for creating choices or varities
+This is a very good data structure for creating choices or varieties
 """
 
 from enum import Enum, auto
@@ -22,7 +22,7 @@ print(f"One order for {choice.value} inch pizza")
 
 
 class Colors(Enum):
-    """T-Shirt Varities"""
+    """T-Shirt Varieties"""
 
     RED = "red"
     BLUE = "blue"

@@ -7,7 +7,7 @@ Avengers receive his call and sends 4 avengers to save Zortan.
 
 1. Ironman
 4. Black Widow
-2. Siperman
+2. Spiderman
 3. Hulk
 
 Each avenger has its attacking power and they have to fight Thanos
@@ -33,7 +33,7 @@ attack_num = 0
 
 # declare helper messages
 WIN_MSG: Final[str] = "You successfully saved Zortan!!! ✨ ✨ ✨"
-LOST_MSG: Final[str] = "Thanos killed Avengers and captured Zortan!!💀 💀 💀"
+LOST_MSG: Final[str] = "Thanos killed Avengers and captured Zortan!! 💀 💀 💀"
 MSG = """
 ---------------------------------------------------------------------
 Zortan is under attack, choose the pairs no. that will attack Thanos

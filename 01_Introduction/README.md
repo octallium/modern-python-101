@@ -20,11 +20,19 @@ Topics Covered -
 ## Installing Optional Dependencies
 
 ```bash
-pip install -U pip black mypy ipython
+    pip install ipython mypy black
 ```
 
 ## Check Python Version
 
 ```bash
-python -V
+    python -V
+```
+
+## Setting Up Path for Mac Users
+
+```bash
+    # Alias Python
+    alias python='python3'
+    alias pip='pip3'
 ```

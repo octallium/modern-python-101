@@ -2,7 +2,7 @@
 First Bug
 ---------
 
-Undesired behaviour in programming is called as `Bug`.
+Undesired behavior in programming is called as `Bug`.
 
 Python is a dynamically typed language so it's easy to introduce a bug.
 """

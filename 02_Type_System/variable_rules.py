@@ -7,6 +7,7 @@ Rules for declaring variables.
 # -----------------------------------------------
 
 styleCamelCase = "modernPython"
+StylePascalCase = "ModernPython"
 style_snake_case = "Modern_Python"
 STYLEUPPERCASE = "I don't wanna change"
 _super_secret = "My Password"
@@ -14,6 +15,7 @@ luckyNumber4 = "Looks it has a number!"
 lucky_number_3 = "I too got a number"
 
 print(styleCamelCase)
+print(StylePascalCase)
 print(style_snake_case)
 print(STYLEUPPERCASE)
 print(_super_secret)
