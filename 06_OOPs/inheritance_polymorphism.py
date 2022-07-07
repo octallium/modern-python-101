@@ -12,7 +12,7 @@ Polymorphism:
 -------------
 Suppose there are two children, one want's to speak in Marathi, other want's to
 speak in Sanskrit. This is possible using polymorphism! It's just creating the same
-methods but with different behaviour.
+methods but with different behavior.
 """
 
 # -------------------------------------------------------------------------
@@ -52,7 +52,7 @@ class Dog(Animal):
     def __str__(self) -> str:
         return f"{self.type}: {self.name}, Breed: {self.breed}"
 
-    # We alter the talk method and make it say woff adding polymorphic behaviour
+    # We alter the talk method and make it say woff adding polymorphic behavior
     def talk(self) -> None:
         print(f"{self.name} says wofff...")
 

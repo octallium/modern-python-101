@@ -7,6 +7,7 @@ Let's improve our design by using classes.
 """
 
 from enum import Enum, auto
+
 # we need this for generating random nos.
 from random import randint
 
@@ -15,7 +16,7 @@ class CharacterType(Enum):
     """Defines the Character Type"""
 
     SUPERHERO = auto()
-    VILLIAN = auto()
+    VILLAIN = auto()
 
 
 class Character:
@@ -47,21 +48,21 @@ class SuperHero(Character):
         )
 
 
-class Villian(Character):
-    """Villian"""
+class Villain(Character):
+    """Villain"""
 
     def __init__(self, name: str, attack_power: int, life: int) -> None:
         super().__init__(name, attack_power, life)
-        self.role = CharacterType.VILLIAN
+        self.role = CharacterType.VILLAIN
 
     def __str__(self) -> str:
         return (
-            f"Villian => Name: {self.name}, Attack Power: {self.attack_power},"
+            f"Villain => Name: {self.name}, Attack Power: {self.attack_power},"
             f" Life: {self.life}"
         )
 
 
-class _Life:
+class Life:
     """
     Helper class for managing Life.
 
@@ -76,25 +77,25 @@ class _Life:
     def inc_hero_life(life: int) -> None:
         """Increases Hero Life"""
 
-        _Life.hero_life += life
+        Life.hero_life += life
 
     @staticmethod
     def dec_hero_life(life: int) -> None:
         """Decreases Hero Life"""
 
-        _Life.hero_life -= life
+        Life.hero_life -= life
 
     @staticmethod
-    def inc_villian_life(life: int) -> None:
-        """Increases Villian Life"""
+    def inc_villain_life(life: int) -> None:
+        """Increases Villain Life"""
 
-        _Life.villain_life += life
+        Life.villain_life += life
 
     @staticmethod
-    def dec_villian_life(life: int) -> None:
-        """Decreases Villian Life"""
+    def dec_villain_life(life: int) -> None:
+        """Decreases Villain Life"""
 
-        _Life.villain_life -= life
+        Life.villain_life -= life
 
 
 # ---------------------------- Superheros -------------------------------
@@ -122,15 +123,15 @@ def get_superhero(index: int) -> SuperHero | None:
         return None
 
 
-# ---------------------------- Villians -------------------------------
+# ---------------------------- Villains -------------------------------
 
 
-def get_all_villians() -> list[Villian]:
-    """Returns a list of all Villians"""
+def get_all_villains() -> list[Villain]:
+    """Returns a list of all Villains"""
     # Super Villains
-    thanos = Villian(name="Thanos", attack_power=400, life=1500)
-    redskull = Villian(name="Redskull", attack_power=300, life=800)
-    proxima = Villian(name="Proxima", attack_power=320, life=800)
+    thanos = Villain(name="Thanos", attack_power=400, life=1500)
+    redskull = Villain(name="Redskull", attack_power=300, life=800)
+    proxima = Villain(name="Proxima", attack_power=320, life=800)
 
     # All Villains
     villains = [thanos, redskull, proxima]
@@ -138,11 +139,11 @@ def get_all_villians() -> list[Villian]:
     return villains
 
 
-def get_villian(index: int) -> Villian | None:
-    """Returns a single villian from the given index"""
-    villians = get_all_villians()
-    if index < len(villians):
-        return villians[index]
+def get_villain(index: int) -> Villain | None:
+    """Returns a single villain from the given index"""
+    villains = get_all_villains()
+    if index < len(villains):
+        return villains[index]
     else:
         return None
 
@@ -156,29 +157,29 @@ def attack() -> None:
         # each iteration get a new hero & villain
         hero_index = randint(0, 3)
         villain_index = randint(0, 2)
-        # Current Superhero & Villian
+        # Current Superhero & Villain
         current_superhero = get_superhero(hero_index)
-        current_villain = get_villian(villain_index)
+        current_villain = get_villain(villain_index)
         if current_superhero and current_villain:
             __simulate_attack(attack_num, current_superhero, current_villain)
         else:
-            print("Error! No superheros or villians to fight.")
+            print("Error! No superheros or villains to fight.")
 
 
-def __simulate_attack(attack_num: int, superhero: SuperHero, villian: Villian) -> None:
+def __simulate_attack(attack_num: int, superhero: SuperHero, villain: Villain) -> None:
     """Simulate the actual attack"""
     # Set life
-    _Life.inc_hero_life(superhero.life)
-    _Life.inc_villian_life(villian.life)
+    Life.inc_hero_life(superhero.life)
+    Life.inc_villain_life(villain.life)
 
     # Print attack msg
     print(
-        f"Attack: {attack_num + 1} => {superhero.name} is going to fight with {villian.name}."
+        f"Attack: {attack_num + 1} => {superhero.name} is going to fight with {villain.name}."
     )
 
     # Actual attack
-    _Life.dec_hero_life(villian.attack_power)
-    _Life.dec_villian_life(superhero.attack_power)
+    Life.dec_hero_life(villain.attack_power)
+    Life.dec_villain_life(superhero.attack_power)
 
 
 # ---------------------------- Final Game Status -------------------------------
@@ -193,7 +194,7 @@ def win_or_loose() -> None:
     print("=" * 58)
 
     # Win or Loose
-    if _Life.hero_life >= _Life.villain_life:
+    if Life.hero_life >= Life.villain_life:
         print(WIN_MSG)
     else:
         print(LOST_MSG)

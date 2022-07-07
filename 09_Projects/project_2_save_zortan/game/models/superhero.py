@@ -11,8 +11,8 @@ class SuperHeroModel:
             names.append(superhero.name)
         return f"{names}"
 
-    def __len__(self) -> int:
-        return len(self.all)
+    # def __len__(self) -> int:
+    #     return len(self.all)
 
     def _get_all_superheros(self) -> list[SuperHero]:
         """Return a list of all Superheros"""

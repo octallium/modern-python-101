@@ -7,7 +7,7 @@ It's all about data transformation, ideally it should:
 
 Or else, it causes a `side effect`.
 
-Remmember people in Zortan greet each other by saying Zola,
+Remember people in Zortan greet each other by saying Zola,
 Louis wants to write a program which can greet any Zortan!
 """
 

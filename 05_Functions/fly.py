@@ -7,7 +7,7 @@ Louis wants to see which of his friends can fly.
 Info:
 -----
 Our functions do only one thing at a time, this is called as `Single
-Responsibility Priciple` and important aspect of programming.
+Responsibility Principle` and important aspect of programming.
 """
 from typing import Final
 

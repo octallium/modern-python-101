@@ -1,7 +1,7 @@
 """
 Class can have class variables as well as instance variables.
 
-Class variables are shared accross all instances while instance
+Class variables are shared across all instances while instance
 variable are only limited to that particular instance.
 """
 

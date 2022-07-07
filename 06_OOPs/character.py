@@ -16,15 +16,15 @@ class Character:
         )
 
 
-villian_1 = Character("Thanos", 400, 1500)
+villain_1 = Character("Thanos", 400, 1500)
 # Using Key value pairs
-villian_2 = Character(name="Redskull", life=800, attack_power=300)
+villain_2 = Character(name="Redskull", life=800, attack_power=300)
 
 hero_1 = Character(name="Ironman", attack_power=250, life=1000)
 hero_2 = Character(name="Blackwidow", attack_power=180, life=800)
 
-print(villian_1)
-print(villian_2)
+print(villain_1)
+print(villain_2)
 
 print(hero_1)
 print(hero_2)

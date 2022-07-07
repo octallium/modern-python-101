@@ -5,4 +5,4 @@ class CharacterType(Enum):
     """Defines the Character Type"""
 
     SUPERHERO = auto()
-    VILLIAN = auto()
+    VILLAIN = auto()

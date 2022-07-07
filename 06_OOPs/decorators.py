@@ -1,7 +1,7 @@
 """
 Decorators:
 -----------
-They are used to implement particular behaviour for our classes.
+They are used to implement particular behavior for our classes.
 
 Summary:
 --------
@@ -116,7 +116,7 @@ class Staff(Person):
         elif self.role == Role.SUPERVISOR and amt < 20:
             print("Error! Supervisor cannot have salary less than $20/hr")
         elif self.role == Role.MANAGER and amt < 25:
-            print("Error! Manager cannot have salary less than $20/hr")
+            print("Error! Manager cannot have salary less than $25/hr")
         else:
             self.__salary = amt
             print(f"{self.fullname} now has a salary of ${self.salary}/hr")

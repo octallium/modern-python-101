@@ -2,15 +2,15 @@ from .character import Character
 from .character_type import CharacterType
 
 
-class Villian(Character):
-    """Villian"""
+class Villain(Character):
+    """Villain"""
 
     def __init__(self, name: str, attack_power: int, life: int) -> None:
         super().__init__(name, attack_power, life)
-        self.role = CharacterType.VILLIAN
+        self.role = CharacterType.VILLAIN
 
     def __str__(self) -> str:
         return (
-            f"Villian => Name: {self.name}, Attack Power: {self.attack_power},"
+            f"Villain => Name: {self.name}, Attack Power: {self.attack_power},"
             f" Life: {self.life}"
         )

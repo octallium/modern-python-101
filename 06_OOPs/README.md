@@ -4,10 +4,10 @@ Topics Covered -
 
 1. Introduction to Classes
 2. Not Everything Needs To Be a Class
-3. Data & Behaviour - Attributes, Fields/Members, Methods
+3. Data & Behavior - Attributes, Fields/Members, Methods
 4. Create Your First Python Class
 5. What Do You Mean By Class Instances?
-6. Adding Methods or Behaviour to Your Python Class
+6. Adding Methods or Behavior to Your Python Class
 7. Introduction to Magic Methods - __str__ 
 8. Inheritance & Polymorphism
 9. Dive Deeper in OOPs - A Future Outlook -> class methods, static methods, property, getters & setters
@@ -23,5 +23,5 @@ Topics Covered -
 
 ## Extra
 
-7. cash_register.py - practise
+7. cash_register.py - practice
 8. box.py - magic methods

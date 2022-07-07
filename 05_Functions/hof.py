@@ -11,11 +11,11 @@ This data type is called as `Callable`, one which can be called or invoked.
 
 Note:
 -----
-Till now we have been sending data to our functions, but sending data everytime
+Till now we have been sending data to our functions, but sending data every time
 can be expensive, instead we can send function to data!
 
 Don't spend too much time mastering this topic, it will come naturally as you
-progess with your programming skills.
+progress with your programming skills.
 """
 # -------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ def goodbye(name: str) -> str:
 
 # Function accepting a function
 def universal_greeter(name: str, greeter: Callable[[str], str]) -> None:
-    """Can greet in multpile ways"""
+    """Can greet in multiple ways"""
     msg = greeter(name)
     print(msg)
 

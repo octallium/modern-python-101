@@ -9,7 +9,7 @@ Principles:
 
 1. DRY - Don't Repeat Yourself -
 ================================
-Try to keep your code as DRY as possible, group common functionility into
+Try to keep your code as DRY as possible, group common functionality into
 individual functions.
 
 2. SRP - Single Responsibility Principle -
@@ -35,7 +35,7 @@ Character = dict[str, str | int]
 
 # ---------------------------- Life -------------------------------
 
-# Helper Varibles
+# Helper Variables
 hero_life = 0
 villain_life = 0
 
@@ -52,14 +52,14 @@ def dec_hero_life(life: int) -> None:
     hero_life -= life
 
 
-def inc_villian_life(life: int) -> None:
-    """Increases Villian Life"""
+def inc_villain_life(life: int) -> None:
+    """Increases Villain Life"""
     global villain_life
     villain_life += life
 
 
-def dec_villian_life(life: int) -> None:
-    """Decreases Villian Life"""
+def dec_villain_life(life: int) -> None:
+    """Decreases Villain Life"""
     global villain_life
     villain_life -= life
 
@@ -90,11 +90,11 @@ def get_superhero(index: int) -> Character | None:
         return None
 
 
-# ---------------------------- Villians -------------------------------
+# ---------------------------- Villains -------------------------------
 
 
-def get_all_villians() -> list[Character]:
-    """Returns a list of all Villians"""
+def get_all_villains() -> list[Character]:
+    """Returns a list of all Villains"""
     # Super Villains
     THANOS: Character = {"name": "Thanos", "attack_power": 400, "life": 1500}
     REDSKULL: Character = {"name": "Redskull", "attack_power": 300, "life": 800}
@@ -106,11 +106,11 @@ def get_all_villians() -> list[Character]:
     return villains
 
 
-def get_villian(index: int) -> Character | None:
-    """Returns a single villian from the given index"""
-    villians = get_all_villians()
-    if index < len(villians):
-        return villians[index]
+def get_villain(index: int) -> Character | None:
+    """Returns a single villain from the given index"""
+    villains = get_all_villains()
+    if index < len(villains):
+        return villains[index]
     else:
         return None
 
@@ -124,20 +124,20 @@ def attack() -> None:
         # each iteration get a new hero & villain
         hero_index = randint(0, 3)
         villain_index = randint(0, 2)
-        # Current Superhero & Villian
+        # Current Superhero & Villain
         current_superhero = get_superhero(hero_index)
-        current_villain = get_villian(villain_index)
+        current_villain = get_villain(villain_index)
         if current_superhero and current_villain:
             simulate_attack(attack_num, current_superhero, current_villain)
         else:
-            print("Error! No superheros or villians to fight.")
+            print("Error! No superheros or villains to fight.")
 
 
-def simulate_attack(attack_num: int, superhero: Character, villian: Character) -> None:
+def simulate_attack(attack_num: int, superhero: Character, villain: Character) -> None:
     """Simulate the actual attack"""
     # Set life
     inc_hero_life(superhero["life"])
-    inc_villian_life(villian["life"])
+    inc_villain_life(villain["life"])
 
     # Print attack msg
     print(
@@ -145,8 +145,8 @@ def simulate_attack(attack_num: int, superhero: Character, villian: Character) -
     )
 
     # Actual attack
-    dec_hero_life(villian["attack_power"])
-    dec_villian_life(superhero["attack_power"])
+    dec_hero_life(villain["attack_power"])
+    dec_villain_life(superhero["attack_power"])
 
 
 # ---------------------------- Final Game Status -------------------------------

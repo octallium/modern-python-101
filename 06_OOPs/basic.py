@@ -15,16 +15,16 @@ Class = Blueprint, Instance = Building
 
 Methods:
 --------
-These are just normal functions, but defined to alter the behaviour of your instance or class.
-Since they are tied to a class, they are called as methods. Their behaviour is dependent on
+These are just normal functions, but defined to alter the behavior of your instance or class.
+Since they are tied to a class, they are called as methods. Their behavior is dependent on
 the structure you define in the class.
 
 When to use Class:
 ------------------
-Use classes only when you need `Structure` and `Behaviour` together.
+Use classes only when you need `Structure` and `Behavior` together.
 
-If you only need strcuture, then choose from any existing data structures such as
-list, tuple, dictionary, queue, etc. Just need a behaviour? Then just create a function
+If you only need structure, then choose from any existing data structures such as
+list, tuple, dictionary, queue, etc. Just need a behavior? Then just create a function
 that transforms your data.
 
 """
@@ -67,14 +67,14 @@ class Person:
 
 # Create an `instance` of class/type `Person`
 p1 = Person("Louis", "Zappa")
-p2 = Person("Cece", "Rojo")
+p2 = Person("Cece", "Neutron")
 
 print(p1)
 print(p2)
 
 # Both are different instances of the same class at different memory location
-print(f"p1 is located at memory address: {id(p1)}")
-print(f"p2 is located at memory address: {id(p2)}")
+print(f"p1 is located at memory address: {hex(id(p1))}")
+print(f"p2 is located at memory address: {hex(id(p2))}")
 
 # Possible but not recommended
 print(p1.__str__())

@@ -41,12 +41,12 @@ PROXIMA: Final[Character] = {"name": "Proxima", "attack_power": 320, "life": 800
 superheros: list[Character] = [IRONMAN, BLACKWIDOW, SPIDERMAN, HULK]
 villains: list[Character] = [THANOS, REDSKULL, PROXIMA]
 
-# Helper Varibles
+# Helper Variables
 hero_life = 0
 villain_life = 0
 
 WIN_MSG: Final[str] = "Avengers successfully saved Zortan!!! ✨ ✨ ✨"
-LOST_MSG: Final[str] = "Thanos killed Avengers and captured Zortan!!💀 💀 💀"
+LOST_MSG: Final[str] = "Thanos killed Avengers and captured Zortan!! 💀 💀 💀"
 
 # Attack
 for attack in range(3):

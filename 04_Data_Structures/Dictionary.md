@@ -4,11 +4,11 @@ They are also known as mapping type, they map keys to the values.
 
 ## What data types you can use for keys in Python dictionary?
 
-Any data type which is immutable can be used as a key. To understand this behaviour we would
-need to undertstand how dictionary works behind the scene, which is too
+Any data type which is immutable can be used as a key. To understand this behavior we would
+need to understand how dictionary works behind the scene, which is too
 advanced for this course.
 
-For now just remmember that immutable data types such as **string, int, float, boolean, tuples,** etc, can be used
+For now just remember that immutable data types such as **string, int, float, boolean, tuples,** etc, can be used
 as keys.
 
 ```python

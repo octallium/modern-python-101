@@ -14,7 +14,7 @@ Lists are mutable data structures, that means the data inside can be mutated.
 Index always starts from 0.
 """
 
-# It's convinient to group all friends together using a `List`
+# It's convenient to group all friends together using a `List`
 # and them greet them
 friends: list[str] = ["Cece", "Roko", "Chiko", "Niko"]
 # List with Index No [   0,      1,       2,      3  ]
@@ -55,7 +55,7 @@ print(f"Friends: {friends}")
 # ---------------------------------------------------------------------
 
 print(friends[2])
-# ------------^ Remmember since List starts from index 0, we use 2 here
+# ------------^ Remember since List starts from index 0, we use 2 here
 
 # ---------------------------------------------------------------------
 # Oh-no Louis again had a fight, this time with Roko

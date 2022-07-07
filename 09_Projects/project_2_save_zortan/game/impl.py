@@ -4,12 +4,12 @@ from random import randint
 
 from .constants import LOST_MSG, NUM_ATTACKS, WIN_MSG
 from .models.superhero import SuperHeroModel
-from .models.villian import VillianModel
+from .models.villain import VillainModel
 from .schemas.game_state import GameState
 from .schemas.life import Life
 from .schemas.player import Player
 from .schemas.superhero import SuperHero
-from .schemas.villian import Villian
+from .schemas.villain import Villain
 
 
 class Game:
@@ -19,7 +19,7 @@ class Game:
         self.player = player
         self.state = GameState.INITIALIZING
         self.superheros = SuperHeroModel()
-        self.villians = VillianModel()
+        self.villains = VillainModel()
 
     def __repr__(self) -> str:
         return "<class 'Game'>"
@@ -27,7 +27,7 @@ class Game:
     def __str__(self) -> str:
         return (
             f"Player: {self.player},\nState: {self.state},\nSuperheros: {self.superheros},\n"
-            f"Villians: {self.villians}"
+            f"Villains: {self.villains}"
         )
 
     # ---------------------------- Attack -------------------------------
@@ -40,18 +40,18 @@ class Game:
 
         for attack_num in range(NUM_ATTACKS):
             # each iteration get a new hero & villain
-            hero_index = randint(0, len(self.superheros) - 1)
-            villain_index = randint(0, len(self.villians) - 1)
+            hero_index = randint(0, len(self.superheros.all) - 1)
+            villain_index = randint(0, len(self.villains.all) - 1)
 
-            # Current Superhero & Villian
+            # Current Superhero & Villain
             current_superhero = self.superheros.get_superhero(hero_index)
-            current_villain = self.villians.get_villian(villain_index)
+            current_villain = self.villains.get_villain(villain_index)
 
-            # Proceed only if we have superhero & villian
+            # Proceed only if we have superhero & villain
             if current_superhero and current_villain:
                 self.__do_attack(attack_num, current_superhero, current_villain)
             else:
-                print("Error! No superheros or villians to fight.")
+                print("Error! No superheros or villains to fight.")
         return self
 
     # ---------------------------- Win or Loose -------------------------------
@@ -74,18 +74,18 @@ class Game:
     # ---------------------------- Helper Method -------------------------------
 
     def __do_attack(
-        self, attack_num: int, superhero: SuperHero, villian: Villian
+        self, attack_num: int, superhero: SuperHero, villain: Villain
     ) -> None:
         """Simulate the actual attack"""
         # Set life
         Life.inc_hero_life(superhero.life)
-        Life.inc_villian_life(villian.life)
+        Life.inc_villain_life(villain.life)
 
         # Print attack msg
         print(
-            f"Attack: {attack_num + 1} => {superhero.name} is going to fight with {villian.name}."
+            f"Attack: {attack_num + 1} => {superhero.name} is going to fight with {villain.name}."
         )
 
         # Actual attack
-        Life.dec_hero_life(villian.attack_power)
-        Life.dec_villian_life(superhero.attack_power)
+        Life.dec_hero_life(villain.attack_power)
+        Life.dec_villain_life(superhero.attack_power)
