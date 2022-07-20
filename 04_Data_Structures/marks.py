@@ -109,3 +109,11 @@ if java_score is None:
     print("Louis did not study Java")
 else:
     print(f"Louis scored {java_score} in java")
+
+# -----------------------------------
+# Deleting an element from dictionary
+# -----------------------------------
+
+del marks["English"]
+
+print(f"Marks: {marks}")
