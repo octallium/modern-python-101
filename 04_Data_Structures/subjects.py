@@ -42,7 +42,7 @@ print(subjects[1])
 # School wants Louis to take another 3 subjects to get full credits
 # ---------------------------------------------------------------------
 
-addl_subjects = ("English", "Python", "Physics")
+addl_subjects = A
 total_subjects = subjects + addl_subjects
 print(f"All subjects: {total_subjects}")
 
