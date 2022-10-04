@@ -65,19 +65,39 @@ while True:
     #
     # Can you implement the following If/Else blocks using `match` operator?
     # ----------------------------------------------------------------------
-    if choice == 1:
-        print("Ironman & Black Widow are attacking Thanos....")
-        thanos_life = thanos_life - IRONMAN_ATTACK_POWER - BLACKWIDOW_ATTACK_POWER
-        attack_num = attack_num + 1
-    elif choice == 2:
-        print("Black Widow & Spiderman are attacking Thanos....")
-        thanos_life = thanos_life - BLACKWIDOW_ATTACK_POWER - SPIDERMAN_ATTACK_POWER
-        attack_num += 1
-    elif choice == 3:
-        print("Spiderman & Hulk are attacking Thanos....")
-        thanos_life = thanos_life - SPIDERMAN_ATTACK_POWER - HULK_ATTACK_POWER
-        attack_num += 1
-    elif choice == 4:
-        print("Hulk & Ironman are attacking Thanos....")
-        thanos_life = thanos_life - HULK_ATTACK_POWER - IRONMAN_ATTACK_POWER
-        attack_num += 1
+    # if choice == 1:
+    #     print("Ironman & Black Widow are attacking Thanos....")
+    #     thanos_life = thanos_life - IRONMAN_ATTACK_POWER - BLACKWIDOW_ATTACK_POWER
+    #     attack_num = attack_num + 1
+    # elif choice == 2:
+    #     print("Black Widow & Spiderman are attacking Thanos....")
+    #     thanos_life = thanos_life - BLACKWIDOW_ATTACK_POWER - SPIDERMAN_ATTACK_POWER
+    #     attack_num += 1
+    # elif choice == 3:
+    #     print("Spiderman & Hulk are attacking Thanos....")
+    #     thanos_life = thanos_life - SPIDERMAN_ATTACK_POWER - HULK_ATTACK_POWER
+    #     attack_num += 1
+    # elif choice == 4:
+    #     print("Hulk & Ironman are attacking Thanos....")
+    #     thanos_life = thanos_life - HULK_ATTACK_POWER - IRONMAN_ATTACK_POWER
+    #     attack_num += 1
+
+    match choice:
+        case 1:
+            print("Ironman & Black Widow are attacking Thanos....")
+            thanos_life = thanos_life - IRONMAN_ATTACK_POWER - BLACKWIDOW_ATTACK_POWER
+            attack_num = attack_num + 1
+        case 2:
+            print("Black Widow & Spiderman are attacking Thanos....")
+            thanos_life = thanos_life - BLACKWIDOW_ATTACK_POWER - SPIDERMAN_ATTACK_POWER
+            attack_num += 1
+        case 3:
+            print("Spiderman & Hulk are attacking Thanos....")
+            thanos_life = thanos_life - SPIDERMAN_ATTACK_POWER - HULK_ATTACK_POWER
+            attack_num += 1
+        case 4:
+            print("Hulk & Ironman are attacking Thanos....")
+            thanos_life = thanos_life - HULK_ATTACK_POWER - IRONMAN_ATTACK_POWER
+            attack_num += 1
+
+
