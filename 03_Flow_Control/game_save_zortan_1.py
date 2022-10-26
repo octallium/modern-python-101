@@ -65,6 +65,8 @@ while True:
     #
     # Can you implement the following If/Else blocks using `match` operator?
     # ----------------------------------------------------------------------
+    
+    print(MSG)
     if choice == 1:
         print("Ironman & Black Widow are attacking Thanos....")
         thanos_life = thanos_life - IRONMAN_ATTACK_POWER - BLACKWIDOW_ATTACK_POWER
