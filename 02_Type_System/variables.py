@@ -28,7 +28,8 @@ print (vap)
 
 # -----------------------------------------------------------------
 vals = []
-for i in range(10):
+for i in range(9):
     print(i)
     vals.append(i)
     
+print(vals)

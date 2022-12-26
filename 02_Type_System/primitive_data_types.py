@@ -8,12 +8,14 @@ Primitive Data Types in Python
 4. Boolean - True/False
 """
 
-my_string = "Louis"
+my_string = 'Louis'
 my_int = 45
 my_float = 3.14
-my_bool = True
+my_bool = False
 
 print(my_string)
 print(my_int)
 print(my_float)
 print(my_bool)
+
+
