@@ -13,3 +13,22 @@ print(box)  # prints -> Crackers
 # Louis changes his mind yet again, now wants to pack hats
 box = "Hats"
 print(box)  # prints -> Hats
+
+vap = "Balloons"
+print (vap)
+
+
+
+vap = "Lucky"
+print (vap)
+
+
+vap = "good"
+print (vap)
+
+# -----------------------------------------------------------------
+vals = []
+for i in range(10):
+    print(i)
+    vals.append(i)
+    
