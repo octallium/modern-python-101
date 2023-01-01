@@ -20,6 +20,21 @@ False or True => True
 age: int = 13
 planet: str = "Earth"
 
+age: int = 29
+planet: str = "neptune"
+
+
+# ----------------------------------------------------
+# If Statement
+# ----------------------------------------------------
+if age < 32 and planet == "neptune":
+    print("You are NOT eligible for a license on Neptune 🪐")
+elif age > 32 and planet == "neptune":
+    print("You can apply for a license on Neptune 🪐")
+elif age < 16 or planet == "Zortan":
+    print("You can apply for a Zortanian 🪐 license!!")
+    
+
 # ----------------------------------------------------
 # And / Or Statement
 # ----------------------------------------------------
@@ -38,6 +53,7 @@ elif age < 16 or planet == "Zortan":
     # Evaluation - True or False => True
     print("You can apply for a Zortanian 🪐 license!!")
 
+
 # ----------------------------------------------------
 # Louis migrates to Zortan
 # ----------------------------------------------------
@@ -53,3 +69,7 @@ elif age > 16 and planet == "Earth":
 elif age < 16 or planet == "Zortan":
     # Evaluation - True and True => True
     print("You can apply for a Zortanian 🪐 license!!")
+
+
+1. check for the paytm - any transactions
+2. cibil score - no, loan, no bounce cheque, account transaction of salary 
