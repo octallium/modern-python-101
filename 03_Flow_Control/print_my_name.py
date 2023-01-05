@@ -9,3 +9,15 @@ name: str = "Louis"
 for character in name:
     # Each iteration print a character
     print(character)
+
+
+# Path: 03_Flow_Control/print_my_name.py
+
+
+
+name: str = "Prasanth Kannan control machainsihm"
+
+
+for look in name:
+    print(look)
+    
