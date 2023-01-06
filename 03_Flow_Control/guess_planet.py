@@ -7,6 +7,36 @@ correct_guess: bool = False
 guess: str = ""
 planet: str = "Zortan"
 
+# Display a welcome message
+# ----------------------------------------------------
+# Alternative 1
+
+guess = "prasad"
+guess = input("Louis Says: Can you guess my planet? >>> ")
+print(guess)
+
+
+correct_guess = False
+guess: str = ""
+planet: str = "Zortan"
+
+# line to try and err
+#while LookupError
+
+while True:
+    #while correct_guess is not True:
+    guess = input("Loius says: can you guess my planet? >>>>")
+
+    if guess.lower() == planet.lower():
+        print("right  ")
+        break
+    else:
+        print("wrong try again")
+        print("--------------")
+        print()
+
+
+"""
 # ----------------------------------------------------
 # Alternative 1
 # ----------------------------------------------------
@@ -39,3 +69,4 @@ while True:
         print("Louis Says: Wrong Choice, try again!")
         print("------------------------------------")
         print()
+"""
