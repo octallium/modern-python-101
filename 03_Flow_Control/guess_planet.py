@@ -10,11 +10,11 @@ planet: str = "Zortan"
 # Display a welcome message
 # ----------------------------------------------------
 # Alternative 1
-
+""" 
 guess = "prasad"
 guess = input("Louis Says: Can you guess my planet? >>> ")
 print(guess)
-
+"""
 
 correct_guess = False
 guess: str = ""

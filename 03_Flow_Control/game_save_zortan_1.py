@@ -31,6 +31,7 @@ thanos_life = 1500
 choice = 0
 attack_num = 0
 
+
 # declare helper messages
 WIN_MSG: Final[str] = "You successfully saved Zortan!!! ✨ ✨ ✨"
 LOST_MSG: Final[str] = "Thanos killed Avengers and captured Zortan!! 💀 💀 💀"
@@ -44,7 +45,6 @@ Zortan is under attack, choose the pairs no. that will attack Thanos
 4) Hulk & Ironman
 ---------------------------------------------------------------------
 """
-
 # Start game
 while True:
 
@@ -81,3 +81,48 @@ while True:
         print("Hulk & Ironman are attacking Thanos....")
         thanos_life = thanos_life - HULK_ATTACK_POWER - IRONMAN_ATTACK_POWER
         attack_num += 1
+
+    # Print the Thanos life
+    
+    
+    
+#visiualaid.com"""
+# Suoper heros , super villians
+# iron,blak widow,spiderman,hulk
+# tHANOS    
+# properties - fire,attack,life  (0,1)
+# contraints - Only attack in pairs, only 3 chances - 
+# logic - stimulate the attack
+# """
+
+#PAXKAGES - ALEADY WRITTEN DEVELIPER - LIBRARUY
+
+from typing import Final
+
+#declare constants with capital 
+IRONMAN_ATTACK_POWER1: Final[int] = 250
+BLACKWIDOW_ATTACK_POWER1: Final[int] = 180
+SPIDERMAN_ATTACK_POWER1: Final[int] = 190
+HULK_ATTACK_POWER1: Final[int] = 300
+
+thanos_life1: int = 1500
+
+
+#constraints
+choice1: int = 0
+
+choice = int(input(" ether the choice to start the game"))
+
+if choice1 == 1:
+    print("Ironman & Black Widow are attacking Thanos....")
+elif choice1 == 2:
+    print("Black Widow & Spiderman are attacking Thanos....")
+elif choice1 == 3:
+    print("Spiderman & Hulk are attacking Thanos....")
+elif choice1 == 4:
+    print("Hulk & Ironman are attacking Thanos....")
+else:
+    print("Invalid choice")
+    
+
+

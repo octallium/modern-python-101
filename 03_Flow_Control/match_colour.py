@@ -8,7 +8,23 @@ INFO -
 `match` is a new operator introduced in Python 3.10
 """
 
-fav_color: str = input("Enter your favorite color: ").lower()
+fav_color: str = "yellow".lower()
+
+color: str = "green".upper()
+
+name: str = "Prasanth".upper()
+
+match color:
+    case "BLACK":
+        print(f"{name} has a BLACK T-Shirt.")
+    case "RED":
+        print(f"{name} has a RED car.")
+    case "YELLOW":
+        print(f"{name} has YELLOW shoes.")
+    case "GREEN":
+        print(f"{name} has a GREEN hat")
+    case _:
+        print(f"{name} has nothing in {color} color.")
 
 match fav_color:
     case "black":
