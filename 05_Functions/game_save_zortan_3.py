@@ -141,7 +141,7 @@ def simulate_attack(attack_num: int, superhero: Character, villain: Character) -
 
     # Print attack msg
     print(
-        f"Attack: {attack_num + 1} => {superhero['name']} is going to fight with {villian['name']}."
+        f"Attack: {attack_num + 1} => {superhero['name']} is going to fight with {villain['name']}."
     )
 
     # Actual attack
